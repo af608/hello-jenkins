@@ -1,13 +1,21 @@
 {
   "name": "hello-jenkins",
+  "main": "app.js",
   "description": "hello jenkins test app",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "clean": "rimraf package-lock.json dist coverage tsconfig.tsbuildinfo",
+    "start": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "express": "3.12.0"
+    "express": "4.17.1"
   },
   "devDependencies": {
-    "mocha": "1.20.1",
-    "supertest": "0.13.0"
+    "mocha": "7.0.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.0",
+    "supertest": "4.0.2"
   }
 }
