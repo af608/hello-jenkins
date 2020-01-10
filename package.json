@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf package-lock.json dist coverage tsconfig.tsbuildinfo",
     "start": "nodemon ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha --exit ./test/test.js"
   },
   "dependencies": {
     "express": "4.17.1"
